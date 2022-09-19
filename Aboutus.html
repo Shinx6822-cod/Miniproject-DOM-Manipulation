@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+     <!-- Bootstrap -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+     crossorigin="anonymous"
+   />
+   <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+     crossorigin="anonymous"
+   ></script>
+    <link rel="stylesheet" href="color.css" />
+  </head>
+  <body>
+    <!-- Navigasi Search -->
+    <nav class="btn-group">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-evenly"
+        id="navbarSupportedContent"
+      >
+        <!-- search form -->
+        <form class="d-flex width_80" role="search">
+          <div class="input-group mb-3 input_search">
+            <input
+              type="text"
+              class="form-control border_none_radius"
+              placeholder="Search for anything"
+              aria-label="Search for anything"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary border_none_radius"
+              type="button"
+              id="button-addon2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- Navigasi -->
+      <a
+        href="HalamanUtama.html"
+        class="nav-link btn-primary active"
+        aria-current="page"
+        >Dis Star</a
+      >
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Serial</a>
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Film</a>
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Lokal</a>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+        style="padding: 1"
+      >
+        Masuk
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Masuk</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-body">
+                <div class="modal-content-data">
+                  <div class="pnl-manager">
+                    <div class="login-container">
+                      <div class="heading">
+                        <span class="heading-text"
+                          >Login using your mobile number</span
+                        ><br />
+                        <span class="subheading-text"></span><br />
+                      </div>
+                      <div class="phone-number-container">
+                        <div class="phone-input">
+                          <span class="country-code">+62</span>
+                          <div class="form-group material-input">
+                            <input
+                              maxlength="100"
+                              type="text"
+                              id="phoneNo"
+                              autocomplete="off"
+                              required=""
+                              name="phoneNo"
+                              class="form-control"
+                              tabindex=""
+                              pattern="[0-9]*"
+                              inputmode="numeric"
+                              placeholder="Masukkan nomor ponsel Anda"
+                              value=""
+                            />
+                            <div
+                              class="page-loader loader"
+                              style="display: none"
+                            ></div>
+                            <p class="info"></p>
+                          </div>
+                        </div>
+                        <button type="button" class="submit-button">
+                          <a
+                            href="Pembaharuan.html"
+                            style="text-decoration: none; color: black"
+                          >
+                            Lanjutkan</a
+                          >
+                        </button>
+                        <div class="attest-message">
+                          <span class="attest-message-text"
+                            >Dengan mengeklik melanjutkan, Anda menyetujui
+                            <a
+                              href="SyaratPenggunaan.html"
+                              target="`_blank`"
+                              rel="`noopener"
+                              noreferrer`=""
+                            >
+                              Persyaratan penggunaan
+                            </a>
+                            kami dan menyatakan bahwa Anda telah membaca
+                            <a
+                              href="Pembaharuan.html"
+                              target="`_blank`"
+                              rel="`noopener"
+                              noreferrer`=""
+                            >
+                              Kebijakan privasi
+                            </a>
+                            kami.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="close-btn"
+                  id="modal-close-icon"
+                  role="presentation"
+                ></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+              close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h3>Tentang Kami</h3>
+    <p>
+      Dis Star adalah layanan streaming yang didedikasikan untuk menayangkan
+      film-film hit mancanegara dan lokal terbesar, semuanya di satu tempat.
+      Layanan kami menyatukan serial favoritmu, film-film Hollywood blockbuster
+      dan konten peraih penghargaan dari Dis, Mar, Star Was, Pixa, Nationa
+      Geographi dan masih banyak lagi, serta pemutaran tayangan Negara
+      eksklusif, dan film-film dari studio-studio terkemuka di Negara.
+    </p>
+    <p>
+      Tersedia di layar yang terhubung ke internet, Dis menawarkan tontonan
+      bebas iklan dengan berbagai film, serial live-action dan animasi, konten
+      berdurasi pendek dan dokumenter, mencakup serial seperti The Mandalorian
+      dan film seperti Avengers: Endgame, Aladdin dan Frozen 2, serta
+      perpustakaan besar film Indonesia dan hit lokal.
+    </p>
+    <h6>Alasan Berlangganan</h6>
+    <p>
+      Dis Negara menawarkan pengalaman eksklusif kepada pelanggan untuk
+      menyaksikan film dan serial Dis Original eksklusif yang belum pernah
+      dilihat sebelumnya, dan lainnya. Film mancanegara terbesar, dari pemecah
+      rekor box office hingga film peraih penghargaan. Ada perpustakaan konten
+      baru yang terus berkembang dari pendongeng terbaik dunia. Dis Negara satu
+      layanan untuk semua orang. Setiap orang memiliki sesuatu untuk dinikmati.
+    </p>
+    <h6>Fitur Utama</h6>
+    <div>
+      Dis menawarkan berbagai fitur menarik untuk dinikmati, berikut beberapa
+      fitur utama:
+      <ul>
+        <li>
+          Pelanggan dapat menonton di dua layar bersamaan sekaligus di ponsel,
+          desktop, atau di Smart TV tertentu.
+        </li>
+        <li>
+          Semua tayangan kami tersedia untuk diunduh, jadi Anda dapat
+          menontonnya saat dalam perjalanan.
+        </li>
+        <li>
+          Layanan kami bebas iklan, jadi Anda dapat menonton semua konten kami
+          tanpa gangguan.
+        </li>
+      </ul>
+    </div>
+    <h6>Cara Berlangganan</h6>
+    <p>
+      Pelanggan dapat berlangganan layanan Dis langsung di situs kami
+      <a href="Pembaharuan.html" target="_blank">www.DisStar.com</a> atau dengan
+      mengunduh dan berlangganan di aplikasi Dis Star kami.
+    </p>
+    <footer>
+      <a href="Aboutus.html" class="footer-link">About Us</a>
+      <a href="SyaratPenggunaan.html" class="footer-link">Syarat Penggunaan</a>
+      <a href="Pembaharuan.html" class="footer-link">Kebijakan Privasi(Baru)</a>
+      <a href="Pembaharuan.html" class="footer-link">Tanya Jawab</a>
+      <form action="Pembaharuan.html">
+        <div class="mb-2 mt-2 form">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+
+        <div class="mb-2 form">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Feedback/Comment</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
